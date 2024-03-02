@@ -3,3 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    background-color: #1D2733;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 80px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.;
+}
+.nav-items li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.nav-items li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 25px;
+    color: white;
+}
+.nav-items li a:hover{
+    background-color: #0a0c0f;
+    border-radius: 5px;
+}
+#click{
+    display: none;
+}
+.menu-btn{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive start  */
+@media only screen and (max-width:940px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-items{
+        position: fixed;
+        top: 100%;
+        background-color: #1D2733;
+        flex-direction: column;
+        border-radius: 0px 0px 5px 5px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    #click:checked ~ .nav-items{
+        top: 70px;
+        right: 0px;
+    }
+    .nav-items li{
+        margin: 20px 30px;
+    }
+}
+
