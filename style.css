@@ -11,6 +11,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px 0px 80px;
+    position: sticky;
+    top: 0px;
 }
 .logo{
     font-size: 25px;
@@ -73,4 +75,95 @@ nav{
         margin: 20px 30px;
     }
 }
+/* nav resposive end  */
+/* header start  */
+header{
+    background-image: url(image/banner.jpg);
+    height: 93vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.search-box input{
+    width: 80%;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    padding: 15px;
+    font-size: 100%;
+    outline: none;
+}
 
+.search-box a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    padding: 10px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+/* hero end  */
+/* first section start  */
+#first-section{
+    background-color: #16213E;
+}
+.service-title{
+    text-align: center;
+    color: white;
+    padding: 30px 0px;
+}
+.service-part{
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.single-service{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.single-service i{
+    font-size: 40px;
+}
+.single-service h2{
+    margin: 10px 0px;
+}
+/* responsive service part  */
+@media only screen and (max-width: 688px) {
+    .service-part{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 945px){
+    .service-part{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 946px){
+    .service-part{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        width: 80%;
+    }
+}
