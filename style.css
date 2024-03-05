@@ -117,11 +117,13 @@ header{
 /* first section start  */
 #first-section{
     background-color: #16213E;
+    padding: 50px 0px;
 }
 .service-title{
     text-align: center;
     color: white;
     padding: 30px 0px;
+    font-size: 30px;
 }
 .service-part{
     width: 1100px;
@@ -142,6 +144,49 @@ header{
 .single-service h2{
     margin: 10px 0px;
 }
+/* second section  */
+#second-section{
+    background-color: #1d3d70;
+    padding: 50px 0px 100px 0px;
+}
+.smart-title{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 30px;
+}
+.smart-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 100px;
+}
+.smart-text{
+    color: white;
+}  
+.smart-text h2{
+    margin: 20px 0px;
+    font-size: 30px;
+    
+}
+.smart-text a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #16213E;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+}  
+.smart-text a:hover{
+    background-color: #14181d;
+}
+/* third section start  */
+
+
 /* responsive service part  */
 @media only screen and (max-width: 688px) {
     .service-part{
@@ -149,6 +194,20 @@ header{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         width: 80%;
+    }
+    .smart-parent{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .image-div{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    
+    .image-div img{
+        width: 100%;
     }
 }
 @media only screen and (min-width: 689px) and (max-width: 945px){
@@ -158,6 +217,33 @@ header{
         grid-gap: 15px;
         width: 80%;
     }
+    .smart-parent{
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .image-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+}
+@media  only screen and (min-width: 946px) and (max-width:1050px) {
+    .smart-parent{
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .image-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
 }
 @media only screen and (min-width: 946px){
     .service-part{
