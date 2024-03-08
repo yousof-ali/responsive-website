@@ -424,8 +424,55 @@ header{
 .take-care-image img{
     width: 700px;
 }
+/* footer section start  */
+footer{
+    background-color: #11354D;
+    padding: 100px 0px 50px 0px;
+}
+#footer-parent{
+    display: flex;
+    gap: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+}
+.single-footer{
+    width: 100%;
+}
+.single-footer h4{
+    margin-bottom: 25px;
+    letter-spacing: 0.1em;
 
-
+}
+.single-footer h4 span{
+    color: yellow;
+}
+#footer-parent .single-footer:nth-child(2) a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin: 15px;
+}
+#footer-parent .single-footer:nth-child(3) ul{
+    display: flex;
+}
+#footer-parent .single-footer:nth-child(3) ul li{
+    list-style: none;
+    margin-right: 12px;
+}
+#footer-parent .single-footer:nth-child(3) ul li a{
+    display: block;
+    background-color: #16213E;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white
+    ;
+}
+.coppy-tag{
+    color: white;
+}
 
 /* responsive service part  */
 @media only screen and (max-width: 688px) {
@@ -533,6 +580,23 @@ header{
         width: 100%;
         margin-top: 50px;
     }
+    #footer-parent{
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+    }
+    .single-footer{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #footer-parent .single-footer:nth-child(2) a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        display: block;
+        margin: 10px;
+    }
 }
 @media only screen and (min-width: 689px) and (max-width: 945px){
     .service-part{
@@ -637,6 +701,17 @@ header{
         width: 100%;
         margin-top: 50px;
     }
+    #footer-parent{
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: white;
+        gap: 15px;
+    }
+    .single-footer{
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 @media  only screen and (min-width: 946px) and (max-width:1350px) {
     .smart-parent{
@@ -692,6 +767,16 @@ header{
     .take-care-image img{
         width: 600px;
         margin-top: 50px;
+    }
+    #footer-parent{
+        display: flex;
+        margin-left: 80px;
+        margin-right: 80px;
+        color: white;
+    }
+    .single-footer{
+        width: 100%;
+        margin-bottom: 50px;
     }
     
 }
